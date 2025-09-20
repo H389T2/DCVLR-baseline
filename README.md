@@ -20,7 +20,10 @@ Run from IDE [How to connect Lambdalabs to Pycharm via SSH](https://medium.com/@
 or
 
 - KOA HPC https://koa.its.hawaii.edu/
-tbd
+
+Possibly the best choice for us, with 50GB permanent storage.
+Can set environment once and use it via ssh or desktop.
+Assign GPU and CPU resources as needed with no charge.
 
 or
 
