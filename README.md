@@ -25,19 +25,24 @@ connect to KOA
 ssh USERNAME@koa.its.hawaii.edu
 
 you are at login session [USERNAME@login-0102 ~]$
-allocate resources and run bash terminal on it. Adjust (see avaliable shared resourses 'sinfo -p gpu,gpu-sandbox,kill-shared | grep gpu' ) how much you think you need and -t time:
+allocate resources and run bash terminal on it. Adjust (see avaliable shared resourses 
+```sinfo -p gpu,gpu-sandbox,kill-shared | grep gpu```) how much you think you need and -t time:
 
-'srun  -p sandbox -c 2 --mem=6G -t 10 --pty /bin/bash' 
-        or another example 
-'srun -I30 -p kill-shared -N 1 -c 3 --mem=8G -t 2-00:00:00 --gres=gpu:NV-V100-SXM2:1 --pty /bin/bash'
+```srun  -p sandbox -c 2 --mem=6G -t 10 --pty /bin/bash``` 
+
+another example 
+
+```srun -I30 -p kill-shared -N 1 -c 3 --mem=8G -t 2-00:00:00 --gres=gpu:NV-V100-SXM2:1 --pty /bin/bash```
 
 you are at compute node [USERNAME@cn-03-13-04 ~]$ ready to run a load
-'python --version' 
+
+```python --version```
 
 load anaconda as a module and activate enviroment
 
-'module load lang/Anaconda3
-source activate base'
+```module load lang/Anaconda3```
+
+```source activate base```
 
 Now can install modules with pip
 
